@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Scent Plug — Luxury in Every Spray. Original designer perfumes, oils & exclusive fragrance finds in Accra, Ghana.">
+  <title>The Scent Plug — Luxury in Every Spray</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader" class="loader">
+    <div class="loader__inner">
+      <div class="loader__logo">TSP</div>
+      <div class="loader__line"></div>
+      <div class="loader__tagline">Luxury in Every Spray</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar">
+    <div class="navbar__container">
+      <a href="#" class="navbar__logo">
+        <span class="logo-mark">TSP</span>
+        <span class="logo-text">The Scent Plug</span>
+      </a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#men" class="nav-link">Men</a></li>
+        <li><a href="#women" class="nav-link">Women</a></li>
+        <li><a href="#unisex" class="nav-link">Unisex</a></li>
+        <li><a href="#special-orders" class="nav-link">Special Orders</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <button class="cart-btn" aria-label="Shopping cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__particles" id="heroParticles"></div>
+    <div class="hero__content reveal">
+      <p class="hero__eyebrow">— Est. Accra, Ghana —</p>
+      <h1 class="hero__title">Discover Your<br><em>Signature Scent</em></h1>
+      <p class="hero__subtitle">Original designer perfumes, oils &amp; exclusive fragrance finds.</p>
+      <div class="hero__actions">
+        <a href="#men" class="btn btn--primary">Shop Now</a>
+        <a href="https://wa.me/233535402722?text=Hello%20The%20Scent%20Plug!%20I'd%20like%20to%20place%20an%20order." class="btn btn--outline" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.287 0-4.4-.758-6.103-2.035l-.427-.322-2.644.886.886-2.644-.322-.427A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          Order via WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MEN SECTION -->
+  <section id="men" class="section products-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">For Him</p>
+        <h2 class="section-title">Men's Collection</h2>
+        <div class="title-rule"></div>
+      </div>
+      <div class="tabs reveal" data-section="men">
+        <button class="tab active" data-tab="men-sprays">Spray Perfumes</button>
+        <button class="tab" data-tab="men-oils">Perfume Oils</button>
+        <button class="tab" data-tab="men-mists">Body Mists</button>
+      </div>
+      <div class="tab-panel active" id="men-sprays">
+        <div class="products-grid">
+          <div class="product-card reveal" data-name="Sauvage Elixir" data-price="450">
+            <div class="product-card__image"><div class="product-card__placeholder">S</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Eau de Parfum</span>
+              <h3 class="product-card__name">Sauvage Elixir</h3>
+              <p class="product-card__price">GH₵ 450</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Sauvage%20Elixir" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Bleu de Chanel" data-price="420">
+            <div class="product-card__image"><div class="product-card__placeholder">B</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Eau de Parfum</span>
+              <h3 class="product-card__name">Bleu de Chanel</h3>
+              <p class="product-card__price">GH₵ 420</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Bleu%20de%20Chanel" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Ombre Nomade" data-price="680">
+            <div class="product-card__image"><div class="product-card__placeholder">O</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Eau de Parfum</span>
+              <h3 class="product-card__name">Ombre Nomade</h3>
+              <p class="product-card__price">GH₵ 680</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Ombre%20Nomade" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Dylan Blue" data-price="350">
+            <div class="product-card__image"><div class="product-card__placeholder">D</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Eau de Toilette</span>
+              <h3 class="product-card__name">Dylan Blue</h3>
+              <p class="product-card__price">GH₵ 350</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Dylan%20Blue" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-panel" id="men-oils">
+        <div class="products-grid">
+          <div class="product-card reveal" data-name="Oud Wood Oil" data-price="280">
+            <div class="product-card__image"><div class="product-card__placeholder">O</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Perfume Oil</span>
+              <h3 class="product-card__name">Oud Wood Oil</h3>
+              <p class="product-card__price">GH₵ 280</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Oud%20Wood%20Oil" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Black Musk Oil" data-price="220">
+            <div class="product-card__image"><div class="product-card__placeholder">B</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Perfume Oil</span>
+              <h3 class="product-card__name">Black Musk Oil</h3>
+              <p class="product-card__price">GH₵ 220</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Black%20Musk%20Oil" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Amber Noir Oil" data-price="250">
+            <div class="product-card__image"><div class="product-card__placeholder">A</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Perfume Oil</span>
+              <h3 class="product-card__name">Amber Noir Oil</h3>
+              <p class="product-card__price">GH₵ 250</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Amber%20Noir%20Oil" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-panel" id="men-mists">
+        <div class="products-grid">
+          <div class="product-card reveal" data-name="Ocean Breeze Mist" data-price="120">
+            <div class="product-card__image"><div class="product-card__placeholder">O</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Body Mist</span>
+              <h3 class="product-card__name">Ocean Breeze Mist</h3>
+              <p class="product-card__price">GH₵ 120</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Ocean%20Breeze%20Mist" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Cedar and Sage Mist" data-price="130">
+            <div class="product-card__image"><div class="product-card__placeholder">C</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Body Mist</span>
+              <h3 class="product-card__name">Cedar &amp; Sage Mist</h3>
+              <p class="product-card__price">GH₵ 130</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Cedar%20and%20Sage%20Mist" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Fresh Vetiver Mist" data-price="110">
+            <div class="product-card__image"><div class="product-card__placeholder">F</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Body Mist</span>
+              <h3 class="product-card__name">Fresh Vetiver Mist</h3>
+              <p class="product-card__price">GH₵ 110</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Fresh%20Vetiver%20Mist" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WOMEN SECTION -->
+  <section id="women" class="section products-section products-section--alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">For Her</p>
+        <h2 class="section-title">Women's Collection</h2>
+        <div class="title-rule"></div>
+      </div>
+      <div class="tabs reveal" data-section="women">
+        <button class="tab active" data-tab="women-sprays">Spray Perfumes</button>
+        <button class="tab" data-tab="women-oils">Perfume Oils</button>
+        <button class="tab" data-tab="women-mists">Body Mists</button>
+      </div>
+      <div class="tab-panel active" id="women-sprays">
+        <div class="products-grid">
+          <div class="product-card reveal" data-name="Miss Dior Blooming" data-price="400">
+            <div class="product-card__image"><div class="product-card__placeholder">M</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Eau de Parfum</span>
+              <h3 class="product-card__name">Miss Dior Blooming</h3>
+              <p class="product-card__price">GH₵ 400</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Miss%20Dior%20Blooming" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Chance Chanel" data-price="430">
+            <div class="product-card__image"><div class="product-card__placeholder">C</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Eau de Parfum</span>
+              <h3 class="product-card__name">Chance Chanel</h3>
+              <p class="product-card__price">GH₵ 430</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Chance%20Chanel" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="La Vie Est Belle" data-price="390">
+            <div class="product-card__image"><div class="product-card__placeholder">L</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Eau de Parfum</span>
+              <h3 class="product-card__name">La Vie Est Belle</h3>
+              <p class="product-card__price">GH₵ 390</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20La%20Vie%20Est%20Belle" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Good Girl" data-price="460">
+            <div class="product-card__image"><div class="product-card__placeholder">G</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Eau de Parfum</span>
+              <h3 class="product-card__name">Good Girl</h3>
+              <p class="product-card__price">GH₵ 460</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Good%20Girl" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-panel" id="women-oils">
+        <div class="products-grid">
+          <div class="product-card reveal" data-name="Rose Oud Oil" data-price="300">
+            <div class="product-card__image"><div class="product-card__placeholder">R</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Perfume Oil</span>
+              <h3 class="product-card__name">Rose Oud Oil</h3>
+              <p class="product-card__price">GH₵ 300</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Rose%20Oud%20Oil" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Jasmine Silk Oil" data-price="260">
+            <div class="product-card__image"><div class="product-card__placeholder">J</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Perfume Oil</span>
+              <h3 class="product-card__name">Jasmine Silk Oil</h3>
+              <p class="product-card__price">GH₵ 260</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Jasmine%20Silk%20Oil" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Vanilla Orchid Oil" data-price="240">
+            <div class="product-card__image"><div class="product-card__placeholder">V</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Perfume Oil</span>
+              <h3 class="product-card__name">Vanilla Orchid Oil</h3>
+              <p class="product-card__price">GH₵ 240</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Vanilla%20Orchid%20Oil" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-panel" id="women-mists">
+        <div class="products-grid">
+          <div class="product-card reveal" data-name="Peony Blush Mist" data-price="115">
+            <div class="product-card__image"><div class="product-card__placeholder">P</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Body Mist</span>
+              <h3 class="product-card__name">Peony Blush Mist</h3>
+              <p class="product-card__price">GH₵ 115</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Peony%20Blush%20Mist" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Wild Berries Mist" data-price="125">
+            <div class="product-card__image"><div class="product-card__placeholder">W</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Body Mist</span>
+              <h3 class="product-card__name">Wild Berries Mist</h3>
+              <p class="product-card__price">GH₵ 125</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Wild%20Berries%20Mist" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Cotton Blossom Mist" data-price="105">
+            <div class="product-card__image"><div class="product-card__placeholder">C</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Body Mist</span>
+              <h3 class="product-card__name">Cotton Blossom Mist</h3>
+              <p class="product-card__price">GH₵ 105</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Cotton%20Blossom%20Mist" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNISEX SECTION -->
+  <section id="unisex" class="section products-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">For Everyone</p>
+        <h2 class="section-title">Unisex Collection</h2>
+        <div class="title-rule"></div>
+      </div>
+      <div class="tabs reveal" data-section="unisex">
+        <button class="tab active" data-tab="unisex-sprays">Spray Perfumes</button>
+        <button class="tab" data-tab="unisex-oils">Perfume Oils</button>
+      </div>
+      <div class="tab-panel active" id="unisex-sprays">
+        <div class="products-grid">
+          <div class="product-card reveal" data-name="Baccarat Rouge 540" data-price="750">
+            <div class="product-card__image"><div class="product-card__placeholder">B</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Eau de Parfum</span>
+              <h3 class="product-card__name">Baccarat Rouge 540</h3>
+              <p class="product-card__price">GH₵ 750</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Baccarat%20Rouge%20540" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Tom Ford Oud Wood" data-price="620">
+            <div class="product-card__image"><div class="product-card__placeholder">T</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Eau de Parfum</span>
+              <h3 class="product-card__name">Tom Ford Oud Wood</h3>
+              <p class="product-card__price">GH₵ 620</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Tom%20Ford%20Oud%20Wood" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Le Labo Santal 33" data-price="580">
+            <div class="product-card__image"><div class="product-card__placeholder">L</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Eau de Parfum</span>
+              <h3 class="product-card__name">Le Labo Santal 33</h3>
+              <p class="product-card__price">GH₵ 580</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Le%20Labo%20Santal%2033" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="CK One Gold" data-price="280">
+            <div class="product-card__image"><div class="product-card__placeholder">C</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Eau de Toilette</span>
+              <h3 class="product-card__name">CK One Gold</h3>
+              <p class="product-card__price">GH₵ 280</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20CK%20One%20Gold" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-panel" id="unisex-oils">
+        <div class="products-grid">
+          <div class="product-card reveal" data-name="Sandalwood Essence" data-price="290">
+            <div class="product-card__image"><div class="product-card__placeholder">S</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Perfume Oil</span>
+              <h3 class="product-card__name">Sandalwood Essence</h3>
+              <p class="product-card__price">GH₵ 290</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Sandalwood%20Essence" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="White Oud Oil" data-price="320">
+            <div class="product-card__image"><div class="product-card__placeholder">W</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Perfume Oil</span>
+              <h3 class="product-card__name">White Oud Oil</h3>
+              <p class="product-card__price">GH₵ 320</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20White%20Oud%20Oil" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal" data-name="Bergamot and Cedar Oil" data-price="270">
+            <div class="product-card__image"><div class="product-card__placeholder">B</div></div>
+            <div class="product-card__body">
+              <span class="product-card__type">Perfume Oil</span>
+              <h3 class="product-card__name">Bergamot &amp; Cedar Oil</h3>
+              <p class="product-card__price">GH₵ 270</p>
+              <div class="product-card__actions">
+                <button class="btn btn--sm btn--primary add-to-cart">Add to Cart</button>
+                <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20order%20Bergamot%20and%20Cedar%20Oil" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRAGRANCE EDUCATION SECTION -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">The Art of Fragrance</p>
+        <h2 class="section-title">Understanding Scent Notes</h2>
+        <div class="title-rule"></div>
+      </div>
+      <div class="notes-grid">
+        <div class="note-card reveal">
+          <div class="note-card__number">01</div>
+          <div class="note-card__icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3 class="note-card__title">Top Notes</h3>
+          <p class="note-card__desc">The first impression — light, fresh, and fleeting. These are the scents you smell immediately upon application. They typically last 15–30 minutes and include citrus, light fruits, and herbs like bergamot, lemon, and lavender.</p>
+          <div class="note-card__examples">
+            <span>Bergamot</span><span>Lemon</span><span>Lavender</span><span>Grapefruit</span>
+          </div>
+        </div>
+        <div class="note-card reveal">
+          <div class="note-card__number">02</div>
+          <div class="note-card__icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3 class="note-card__title">Heart Notes</h3>
+          <p class="note-card__desc">The soul of the fragrance — warm, rounded, and full-bodied. These emerge as the top notes fade, lasting 2–4 hours. They form the core identity of the perfume, often featuring florals and spices like rose, jasmine, and cardamom.</p>
+          <div class="note-card__examples">
+            <span>Rose</span><span>Jasmine</span><span>Cardamom</span><span>Ylang-Ylang</span>
+          </div>
+        </div>
+        <div class="note-card reveal">
+          <div class="note-card__number">03</div>
+          <div class="note-card__icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="note-card__title">Base Notes</h3>
+          <p class="note-card__desc">The foundation — deep, rich, and long-lasting. These are the scents that linger on your skin for hours after application. They anchor the entire composition and include woods, resins, and musks like sandalwood, vanilla, and amber.</p>
+          <div class="note-card__examples">
+            <span>Sandalwood</span><span>Vanilla</span><span>Amber</span><span>Musk</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIAL ORDERS SECTION -->
+  <section id="special-orders" class="section special-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Bespoke Requests</p>
+        <h2 class="section-title">Special Orders</h2>
+        <div class="title-rule"></div>
+        <p class="section-desc">Can't find what you're looking for? We source any designer fragrance upon request. Simply fill in the form below or reach out via WhatsApp, and we'll handle the rest.</p>
+      </div>
+      <div class="special-grid">
+        <form class="special-form reveal" id="specialOrderForm">
+          <div class="form-group">
+            <label for="soName">Full Name</label>
+            <input type="text" id="soName" name="name" placeholder="e.g. Kwame Asante" required>
+          </div>
+          <div class="form-group">
+            <label for="soPhone">Phone Number</label>
+            <input type="tel" id="soPhone" name="phone" placeholder="e.g. 0535402722" required>
+          </div>
+          <div class="form-group">
+            <label for="soPerfume">Perfume Requested</label>
+            <input type="text" id="soPerfume" name="perfume" placeholder="e.g. Tom Ford Lost Cherry" required>
+          </div>
+          <div class="form-group form-group--full">
+            <label for="soMessage">Additional Details</label>
+            <textarea id="soMessage" name="message" rows="4" placeholder="Size, concentration, or any other preferences..."></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary">Submit Request</button>
+            <a href="https://wa.me/233535402722?text=Hi!%20I'd%20like%20to%20place%20a%20special%20order." target="_blank" rel="noopener" class="btn btn--outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.287 0-4.4-.758-6.103-2.035l-.427-.322-2.644.886.886-2.644-.322-.427A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+              Quick Order via WhatsApp
+            </a>
+          </div>
+        </form>
+        <div class="special-aside reveal">
+          <div class="special-aside__card">
+            <h3>How It Works</h3>
+            <ol>
+              <li>Tell us the fragrance you want.</li>
+              <li>We confirm availability &amp; pricing.</li>
+              <li>We source and deliver it to you in Accra.</li>
+            </ol>
+            <p class="special-aside__note">Delivery times vary. Most orders arrive within 5–14 business days.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2 class="section-title">Contact Us</h2>
+        <div class="title-rule"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.287 0-4.4-.758-6.103-2.035l-.427-.322-2.644.886.886-2.644-.322-.427A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+            </div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/233535402722" target="_blank" rel="noopener">0535402722</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M15.5 9.5c-.3-1.2-1.5-2-3-2-2.2 0-3.5 1.5-3.5 3.5s1.3 3.5 3.5 3.5c1.5 0 2.7-.8 3-2"/><circle cx="12" cy="11" r="1"/></svg>
+            </div>
+            <div>
+              <h4>Snapchat</h4>
+              <span>@las.ie</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <span>Accra, Ghana</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map reveal">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.68297771577!2d-0.2630670741394773!3d5.603716970382957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0xbed14ed8650e2dd3!2sAccra%2C%20Ghana!5e0!3m2!1sen!2s!4v1700000000000" width="100%" height="400" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="The Scent Plug Location — Accra, Ghana"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__divider"></div>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-mark">TSP</span>
+        <span class="logo-text">The Scent Plug</span>
+        <p class="footer__tagline">Luxury in Every Spray.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#men">Men</a>
+        <a href="#women">Women</a>
+        <a href="#unisex">Unisex</a>
+        <a href="#special-orders">Special Orders</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer__copy">
+        <p>&copy; 2026 The Scent Plug. All rights reserved. Accra, Ghana.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
